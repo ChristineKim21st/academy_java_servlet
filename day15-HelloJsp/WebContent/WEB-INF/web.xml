@@ -19,7 +19,7 @@
    -->
   <servlet>
   	<servlet-name>secureJsp</servlet-name>
-  	<jsp-file>/WEB-INF/Jsp/secure.jsp</jsp-file>
+  	<jsp-file>/WEB-INF/jsp/secure.jsp</jsp-file>
   </servlet>
   <servlet-mapping>
   	<servlet-name>secureJsp</servlet-name>
@@ -43,13 +43,42 @@
   <!-- product List JSP 설정 -->
   <servlet>
   	<servlet-name>productListJsp</servlet-name>
-  	<jsp-file>/WEB-INF/Jsp/Product/list.jsp</jsp-file>
+  	<jsp-file>/WEB-INF/jsp/product/list.jsp</jsp-file>
   </servlet>
   <servlet-mapping>
   	<servlet-name>productListJsp</servlet-name>
   	<url-pattern>/product/list</url-pattern>
   </servlet-mapping>
   
+  <!-- main.jsp설정 -->
+  <servlet>
+  	<servlet-name>mainJsp</servlet-name>
+  	<jsp-file>/WEB-INF/jsp/actionTag/main.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>mainJsp</servlet-name>
+  	<url-pattern>/main</url-pattern>
+  </servlet-mapping>
+  
+  <!-- copy.jsp설정 -->
+  <servlet>
+  	<servlet-name>copyJsp</servlet-name>
+  	<jsp-file>/WEB-INF/jsp/actionTag/copy.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>copyJsp</servlet-name>
+  	<url-pattern>/copy</url-pattern>
+  </servlet-mapping>
+   
+  <!-- copy.jsp설정 -->
+  <servlet>
+  	<servlet-name>reqJsp</servlet-name>
+  	<jsp-file>/WEB-INF/jsp/request/reqTest.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>reqJsp</servlet-name>
+  	<url-pattern>/req</url-pattern>
+  </servlet-mapping>
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>
     <welcome-file>index.htm</welcome-file>
@@ -58,4 +87,7 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+  
+  
+  
 </web-app>
