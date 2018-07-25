@@ -1,15 +1,13 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/core" %>
+    pageEncoding="UTF-8"%>  
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
 <title>제품 신규 등록</title>
 <style type="text/css">
-	table, tr, th, td {
-		border : 1px solid black;
+	table, tr, th, td{
+		border: 1px solid black;
 	}
 </style>
 </head>
@@ -17,7 +15,6 @@
 <h3>제품 신규 등록</h3>
 <hr>
 <form action="insert" method="post">
-<!-- 	table>(tr>th[colspan=2])+tr>(th+td))*4 -->
 	<table>
 		<tr>
 			<th colspan="2">제품 정보 등록하기</th>
@@ -48,12 +45,11 @@
 		</tr>
 		<tr>
 			<td colspan="2">
-				<input type="submit" value="등록"/>
+				<input type="submit" value="등록하기"/>
 				<input type="reset" value="초기화"/>
 			</td>
 		</tr>
 	</table>
 </form>
-
 </body>
 </html>
