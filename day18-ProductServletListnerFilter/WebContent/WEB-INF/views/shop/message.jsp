@@ -5,7 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <!-- 2초 후에 명시된 url로 자동 이동하는 meta 태그 사용 -->
-<meta http-equiv="refresh" content="2;url=${next}">
+<meta http-equiv="refresh" content="2;url=${contextPath}/${next}">
 <title>시스템 메시지</title>
 </head>
 <body>
@@ -14,5 +14,7 @@
      message 속성을 EL을 이용하여 출력만 하는 페이지
  --%>
 ${message}
+<hr>
+${contextPath}/${next}
 </body>
 </html>

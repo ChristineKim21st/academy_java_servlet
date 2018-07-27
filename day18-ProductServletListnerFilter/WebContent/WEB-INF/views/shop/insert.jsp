@@ -16,7 +16,7 @@
 <body>
 <h3>제품 신규 등록</h3>
 <hr>
-<form action="insert" method="post">
+<form action="${contextPath}/main/insert" method="post">
 <!-- 	table>(tr>th[colspan=2])+tr>(th+td))*4 -->
 	<table>
 		<tr>

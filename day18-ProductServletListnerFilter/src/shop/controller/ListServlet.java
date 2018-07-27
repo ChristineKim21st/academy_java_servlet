@@ -19,7 +19,7 @@ import shop.vo.Product;
  * @author PC38215
  *
  */
-@WebServlet("/list")
+@WebServlet({"/list", "/main/list"})
 public class ListServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
@@ -40,7 +40,7 @@ public class ListServlet extends HttpServlet {
 		
 		// 4. 조회 결과가 추가된 request를 적절한 목록 뷰(list.jsp)로 전달(페이지 이동)
 		RequestDispatcher reqd;
-		reqd = request.getRequestDispatcher("listJsp");
+		reqd = request.getRequestDispatcher("/listJsp");
 		
 		reqd.forward(request,  response);
 	}

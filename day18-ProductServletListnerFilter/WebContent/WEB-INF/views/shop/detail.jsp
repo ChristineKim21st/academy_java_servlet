@@ -12,25 +12,32 @@
 	<tr>
 		<th>제품 코드</th>
 		<td>
-			<input name="prodCode" type="text" required="required" value="${product.prodCode}"/>
+			${product.prodCode}"
 		</td>
 	</tr>
 	<tr>
 		<th>제품 이름</th>
 		<td>
-			<input name="prodName" type="text" value="${product.prodName}"/>
+			${product.prodName}
 		</td>
 	</tr>
 	<tr>
 		<th>가격</th>
 		<td>
-			<input name="price" type="number" value="${product.price}"/>
+			${product.price}
 		</td>
 	</tr>
 	<tr>
 		<th>재고</th>
 		<td>
-			<input name="quantity" type="number" value="${product.quantity}"/>
+			${product.quantity}
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2" style="text-align: center">
+			<a href="${contextPath}/main/list">목록보기</a>
+			<a href="${contextPath}/main/update?prodCode=${product.prodCode}">수정</a>
+			<a href="${contextPath}/main/delete?prodCode=${product.prodCode }">삭제</a>
 		</td>
 	</tr>
 </table>

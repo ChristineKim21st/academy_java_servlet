@@ -21,7 +21,7 @@ import shop.vo.Product;
  * @author PC38215
  *
  */
-@WebServlet("/detail")
+@WebServlet({"/detail", "/main/detail"})
 public class DetailServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
@@ -59,7 +59,7 @@ public class DetailServlet extends HttpServlet {
 			request.setAttribute("product", found);
 			
 			// 3.(1) 1차 뷰 선택
-			view = "detailJsp";
+			view = "/detailJsp";
 			
 		} catch (NotFoundException e) {
 			// 조회하려는 제품이 없을 때 메시지 생성
@@ -69,10 +69,10 @@ public class DetailServlet extends HttpServlet {
 			request.setAttribute("message", message);
 			
 			// 3.(1) 1차 뷰 선택
-			view = "messageJsp";
+			view = "/messageJsp";
 
 			// 3.(2) 2차 뷰 선택 & 속성으로 추가
-			next = "list";
+			next = "main/list";
 			request.setAttribute("next", next);
 			
 			e.printStackTrace();

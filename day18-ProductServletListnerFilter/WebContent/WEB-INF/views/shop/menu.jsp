@@ -11,8 +11,10 @@
 <hr>
 <!-- ul>(li>a)*2 -->
 <ul>
-	<li><a href="list">전체 제품 목록</a></li>
-	<li><a href="insert">제품 신규 등록</a></li>
+	<li><a href="${contextPath}/list">전체 제품 목록</a></li>
+	<li><a href="${contextPath}/insert">제품 신규 등록</a></li>
+	<br/>
+	<li><a href="${contextPath}/logout">로그아웃</a></li>
 </ul>
 </body>
 </html>
