@@ -26,14 +26,15 @@
     <url-pattern>/insertJsp</url-pattern>
   </servlet-mapping>
   <servlet>
-    <servlet-name>messageJsp</servlet-name>
+    <servlet-name>msgJsp</servlet-name>
     <jsp-file>/WEB-INF/views/shop/message.jsp</jsp-file>
   </servlet>
   <servlet-mapping>
-    <servlet-name>messageJsp</servlet-name>
+    <servlet-name>msgJsp</servlet-name>
     <url-pattern>/messageJsp</url-pattern>
   </servlet-mapping>
-  <servlet>
+  
+    <servlet>
     <servlet-name>detailJsp</servlet-name>
     <jsp-file>/WEB-INF/views/shop/detail.jsp</jsp-file>
   </servlet>
@@ -41,6 +42,7 @@
     <servlet-name>detailJsp</servlet-name>
     <url-pattern>/detailJsp</url-pattern>
   </servlet-mapping>
+
   <servlet>
     <servlet-name>updateJsp</servlet-name>
     <jsp-file>/WEB-INF/views/shop/update.jsp</jsp-file>
@@ -49,6 +51,7 @@
     <servlet-name>updateJsp</servlet-name>
     <url-pattern>/updateJsp</url-pattern>
   </servlet-mapping>
+
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>
     <welcome-file>index.htm</welcome-file>

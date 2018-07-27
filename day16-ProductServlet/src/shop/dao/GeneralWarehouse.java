@@ -15,7 +15,7 @@ import shop.vo.Product;
 public interface GeneralWarehouse {
 
 	/**
-	 * Product 정보 1건을 추가함 <br/>
+	 * Product 정보 1건을 추가함 <br/>s
 	 * -----------------------------------------------------<br/>
 	 * 추가하는 과정에서 추가할 제품이 이미 존재하면 0을 리턴하고<br/>
 	 * 동일 데이터가 존재하지 않아 추가에 성공하면 1을 리턴함 <br/>

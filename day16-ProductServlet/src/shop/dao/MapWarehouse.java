@@ -50,7 +50,6 @@ public class MapWarehouse implements GeneralWarehouse {
 		
 		if (isExists(product)) {
 			found = products.get(product.getProdCode());
-			
 		} else {
 			// 조회할 제품이 존재하지 않음
 			throw new NotFoundException("get", product);
@@ -104,9 +103,3 @@ public class MapWarehouse implements GeneralWarehouse {
 		return products.containsKey(product.getProdCode());
 	}
 }
-
-
-
-
-
-

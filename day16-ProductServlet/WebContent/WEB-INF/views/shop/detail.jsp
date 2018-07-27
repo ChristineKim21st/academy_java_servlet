@@ -8,6 +8,7 @@
 <title>제품 상세 조회</title>
 </head>
 <body>
+
 <table>
 	<tr>
 		<th>제품 코드</th>
@@ -41,5 +42,6 @@
 		</td>
 	</tr>
 </table>
+
 </body>
 </html>
