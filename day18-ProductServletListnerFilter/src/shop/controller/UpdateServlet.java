@@ -47,9 +47,7 @@ public class UpdateServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request
 			           , HttpServletResponse response) 
 			        		   throws ServletException, IOException {
-		// 1. 한글 처리 (요청, 응답) : 여기서는 필수는 아님
-		request.setCharacterEncoding("utf-8");
-		response.setContentType("text/html;charset=utf-8");
+
 		
 		// 2. 모델 생성
 		// (1) 전달된 요청 파라미터(prodCode)를 추출
@@ -59,7 +57,7 @@ public class UpdateServlet extends HttpServlet {
 		
 		// (3) DB 조회에 사용할 객체 준비
 		GeneralWarehouse warehouse;
-		warehouse = getWarehouse("mybatis");
+		warehouse = (GeneralWarehouse)getServletContext().getAttribute("warehouse");
 
 		// 3. View 선택
 		// (1) view 저장 변수 선언
@@ -116,7 +114,8 @@ public class UpdateServlet extends HttpServlet {
 		int quantity = Integer.parseInt(request.getParameter("quantity"));	
 		
 		Product product = new Product(prodCode, prodName, price, quantity);
-		GeneralWarehouse warehouse = getWarehouse("mybatis");
+		GeneralWarehouse warehouse;
+		warehouse = (GeneralWarehouse)getServletContext().getAttribute("warehouse");
 		
 		String view = null;
 		String next = null;

@@ -30,7 +30,8 @@ public class LogoutServlet extends HttpServlet {
 			
 			request.setAttribute("message", userid+"님, 로그아웃되었습니다.");
 			
-			request.setAttribute("next", "login");
+/*			request.setAttribute("next", "login");
+*/			request.setAttribute("next", "login");
 		}
 		
 		request.getRequestDispatcher("/messageJsp").forward(request, response);

@@ -46,7 +46,7 @@ public class DeleteServlet extends HttpServlet {
 		
 		//2.(3)DB객체 얻기
 		GeneralWarehouse warehouse;
-		warehouse = getWarehouse("mybatis");
+		warehouse = (GeneralWarehouse)getServletContext().getAttribute("warehouse");
 		
 		//3.view관련 변수들 선언
 		String view = null;

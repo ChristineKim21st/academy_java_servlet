@@ -21,7 +21,7 @@ public class LoginServlet extends HttpServlet {
 			           , HttpServletResponse response) 
 			        		   throws ServletException, IOException {
 		// 뷰 결정
-		String view = "loginJsp";
+		String view = "/loginJsp";
 		
 		// 페이지 이동
 		RequestDispatcher reqd;

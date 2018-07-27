@@ -27,11 +27,7 @@ public class DetailServlet extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-		// 1. 한글처리
-		// (1) 요청 한글 처리
-		request.setCharacterEncoding("utf-8");
-		// (2) 응답 한글 처리
-		response.setContentType("text/html;charset=utf-8");
+
 		
 		// 2. 모델 생성
 		// (1) 화면에서 얻어온 파라미터 추출
@@ -44,7 +40,7 @@ public class DetailServlet extends HttpServlet {
 		
 		// (3) DB 조회에 사용할 객체 준비
 		GeneralWarehouse warehouse;
-		warehouse = getWarehouse("mybatis");
+		warehouse = (GeneralWarehouse)getServletContext().getAttribute("warehouse");
 		
 		// 3. View 객체 선언
 		String view = null;
