@@ -61,12 +61,15 @@ public class CookieServlet extends HttpServlet {
 			
 			ckUserId.setMaxAge(10);
 			ckPassword.setMaxAge(10);
+			
+			response.addCookie(ckPassword);
+			response.addCookie(ckUserId);
 		}
 		
 		//4.로그인 성공 페이지로 이동
 		ServletContext context = getServletContext();
 		String view = context.getContextPath()
-						+"/views/cookie/success";
+						+"/cookie/views/success";
 		response.sendRedirect(view);
 	}
 

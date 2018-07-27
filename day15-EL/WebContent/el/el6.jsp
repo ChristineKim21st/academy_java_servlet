@@ -4,11 +4,10 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>EL (6) 내장객체와 맵, 사용자 정의 타입 객체의 사용</title>
+<title>EL (6) 내장객체와 맵, 사용자 정의 타입 객체 사용</title>
 </head>
 <body>
 <%  
-	// 사용자 정의 타입 Product 객체 생성
 	product.Product adidas      = new product.Product("S001", "슈퍼스타", 87200, 5);
 	product.Product reebok      = new product.Product("S002", "리복 로얄 테크큐 티", 42000, 20);
 	product.Product nike        = new product.Product("S003", "나이키 탄준 샌들", 41300, 30);
@@ -32,8 +31,6 @@
 %>
 <h3>EL 의 사용자 정의 객체(빈즈), 맵 객체에서 값 추출</h3>
 <pre>
-.(도트) 연산자로 값을 추출
-
 1. Product 중 adidas 이름으로 request 에 추가된 객체를 추출
   => 내장객체이름.어트리뷰트이름.필드이름
   
